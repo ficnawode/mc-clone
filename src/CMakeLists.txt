@@ -4,11 +4,17 @@ add_executable(${NAME})
 
 target_link_libraries(${NAME}
     PRIVATE
+    gfx
 )
 
 target_sources(${NAME}
     PRIVATE
     main.cpp
+    Window.cpp 
+    State.cpp 
+
+    include/State.hpp
+    include/Window.hpp
 )
 
 target_include_directories(${NAME}
